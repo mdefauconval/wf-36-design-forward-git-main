@@ -3,7 +3,17 @@
 .header {
   background: $primary;
   color: black;
-  padding: $spacing;
+}
+
+.btn-ticket {
+  background: black;
+  color: white;
+  transition: border-color 0.2s ease background-color 0.2s ease;
+
+  &:hover {
+    background-color: blue;
+    border-color: white;
+  }
 }
 
 
@@ -12,17 +22,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-inline: 2rem;
+}
 
   nav {
     display: flex;
     gap: 1rem;
   }
-}
+
 
 a {
+  position: relative;
+  border-radius: 10px;
+  padding: 10px 15px;
   text-decoration: none;
+  color: black;
+  
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15px; // aligné avec le padding du texte
+    right: 15px;
+    height: 2px;
+    background-color: blue;
+    transform: scaleX(0); // ligne invisible au départ
+    transform-origin: left; // la ligne "grandit" depuis la gauche
+    transition: transform 0.3s ease;
+  }
+
+    &:hover::after {
+      transform: scaleX(1);
+  }
 }
 
-.icon-party::before { 
-  content: "\e81a"; 
+.icon-party{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 300;
+
+ &::before { 
+  font-family: 'Material Icons';
+  content: "\ea68"; 
+}}
+
+.highlight {
+  font-weight: 700; 
 }

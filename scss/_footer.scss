@@ -1,1 +1,35 @@
 /* TODO _footer.scss */
+.footer {
+  background: $primary;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    gap: 22rem;
+    div {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        margin: .1rem;
+      }
+
+      a {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 1rem;
+        color:rgb(171, 114, 123);
+        font-size: 15px;
+      }
+    }
+  }
+
+  &__copy {
+    color: rgb(171, 114, 123);
+  }
+
+}

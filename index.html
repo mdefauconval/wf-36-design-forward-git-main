@@ -9,10 +9,13 @@
   <body>
     <header class="header">
       <div class="nav__container">
-        <h1 class="icon-party">Festuival</h1>
+        <h1 class="icon-party">
+          <span class="text">Fest<span class="highlight">ui</span>val</span>
+        </h1>
         <nav>
           <a href="#">Accueil</a><a href="#">Programme</a
           ><a href="#">Speakers</a><a href="#">Contact</a>
+          <a href="#" class="btn-ticket">Acheter un ticket</a>
         </nav>
       </div>
     </header>
@@ -22,46 +25,90 @@
       <a class="btn" href="#">S'inscrire</a>
     </section>
     <section class="cards container">
+      <h2>Ateliers</h2>
       <div class="card">
+        <img src="https://a.storyblok.com/f/228039/1440x617/25c32698bb/design-uiux-enhance-experience.jpg" alt="Atelier UX">
+        <div class="card-info">
+          <span class="date">10 Janvier 2026</span>
+          <span class="time">09:00 - 11:00</span>
+
           <h3>Atelier UX</h3>
           <p>Découvrez les bases de l'expérience utilisateur à travers des exercices pratiques.</p>
+        </div>
       </div>
   
       <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtKQxaa6uhrLaO_2q-JiQYunaN4sLk-P8oeQTXBX_xhlYKbvvsHkIT6Pg&s=10.jpg" alt="Design UI">
+      <div class="card-info">
+        <span class="date">15 Janvier 2026</span>
+        <span class="time">08:30 - 12:00</span>
+
           <h3>Design UI</h3>
           <p>Apprenez à créer des interfaces modernes avec les bonnes pratiques.</p>
+        </div>
       </div>
   
       <div class="card">
-          <h3>Prototypage</h3>
+        <img src="https://help.figma.com/hc/article_attachments/4404146549271.jpg" alt="Prototypage">
+        <div class="card-info">
+          <span class="date">20 Janvier 2026</span>
+          <span class="time">12:00 - 16:30</span>
+
+        <h3>Prototypage</h3>
           <p>Réalisez des maquettes interactives avec Figma.</p>
+        </div>
       </div>
   </section>
   <section class="program container">
     <h2>Programme</h2>
 
     <div class="program-item">
-        <span>09:00</span>
-        <p>Accueil des participants</p>
+      <span>09:00</span>
+      <p>Accueil des participants</p>
     </div>
 
     <div class="program-item">
         <span>10:00</span>
-        <p>Conférence UX/UI</p>
+        <p>Conférence UX/UI 1</p>
     </div>
 
     <div class="program-item">
-        <span>14:00</span>
-        <p>Ateliers pratiques</p>
+    <span>10:00</span>
+    <p>Conférence UX/UI 2</p>
     </div>
 
     <div class="program-item">
-        <span>17:00</span>
-        <p>Clôture du festival</p>
+      <span>14:00</span>
+      <p>Ateliers pratiques</p>
     </div>
-</section>
-    <footer class="footer container">
-      <!-- TODO: footer -->c'es la partie footer en bas de page
-    </footer>
-  </body>
+
+    <div class="program-item">
+      <span>17:00</span>
+      <p>Clôture du festival</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <section class="footer__container">
+      <div class="footer__visite">
+        <a class="footer__visite-link" href="#">Visite</a>
+        <p>Rue royale, 4</p>
+        <p>1000 Bruxelles</p>
+      </div>
+      <div class="footer__programme">
+        <a class="footer__programme-link" href="#">Programme</a>
+        <p>Horaire</p>
+        <p>Ateliers</p>
+      </div>
+      <div class="footer__contact">
+        <a class="footer__contact-link" href="#">Contact</a>
+        <p>festuival@gmail.com</p>
+        <p>+32 71 589 33 58</p>
+      </div>
+    </section>
+    <p class="footer__copy">&copy; Festuival - 2026</p>
+  </footer>
+
+</body>
+
 </html>
