@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 .header {
   background: $primary;
-  color: red;
+  color: black;
   padding: $spacing;
 }
-nav {
+
+
+.nav__container {
+
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    gap: 1rem;
+  }
 }
+
 a {
-  color: blue;
   text-decoration: none;
+}
+
+.icon-party::before { 
+  content: "\e81a"; 
 }
