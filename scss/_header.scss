@@ -12,7 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: solid 1px black;
 
   nav {
     display: flex;
@@ -21,14 +20,9 @@
 }
 
 a {
-  color: black;
   text-decoration: none;
 }
 
 .icon-party::before { 
   content: "\e81a"; 
-}
-
-.icon-party {
-  border: solid 1px black;
 }
