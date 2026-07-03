@@ -1,11 +1,33 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: yellow;
+  gap: 10px;
+  padding-inline: 2rem;
+  align-items: start;
+
+}
+
+blockquote {
+  width: 20rem;
+  font-size: 15px;
+  font-weight: 100;
+  margin-inline: 0px;
+  background: lightblue;
+}
+
+
 .header {
   background: $primary;
   color: black;
 }
 
-.btn-ticket,  .btn-discover {
+
+
+.btn-ticket, .btn-discover {
   background: black;
   color: white;
   transition: border-color 0.2s ease background-color 0.2s ease;
