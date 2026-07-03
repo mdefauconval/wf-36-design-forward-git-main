@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+.header {
+  background: #5b5bd6;
+  color: red;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* TODO _hero.scss */
+/* TODO _cards.scss */
+/* TODO _program.scss */
+/* TODO _footer.scss *//*# sourceMappingURL=main.css.map */
