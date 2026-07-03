@@ -1,4 +1,30 @@
 /* TODO _footer.scss */
-footer {
-  background: var($primary);
+.footer {
+  background: $primary;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        margin: .1rem;
+      }
+      a {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__copy {
+      color: rgb(125, 81, 88);
+    }
+  }
 }
